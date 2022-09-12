@@ -23,4 +23,17 @@ notas.push(5);
 
 const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4] + notas[5];
 
+const nome = 'Bruno Mendonça Gusmão';
+
+for (let i = 0; i < array.length; i++) {
+    
+    const nota = notas[i];
+    soma = soma + nota;
+    
+}
+
+const media = soma / notas.length;
+console.log(media);
+
+
 console.log(soma / 5);
