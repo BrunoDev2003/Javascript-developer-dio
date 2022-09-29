@@ -1,3 +1,12 @@
-h1 {
-    color: red;
+
+* {
+    font-family:'Roboto','Sans-serif' ;
+}
+
+.content {
+    padding: 14rem;
+}
+
+.content h1 {
+    margin: 0px;
 }
