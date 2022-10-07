@@ -3,12 +3,22 @@
     font-family:'Roboto','Sans-serif' ;
     box-sizing: border-box;
 }
+body {
+    background-color: #0A3239;
+}
 
 .content {
     padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
 }
 
-
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
 
 .pokemons {
     list-style:none;
@@ -16,6 +26,12 @@
     margin: 0px;
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .pokemon {
