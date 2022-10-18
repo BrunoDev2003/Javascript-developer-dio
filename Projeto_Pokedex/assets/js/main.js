@@ -23,27 +23,19 @@ function convertPokemonToLi(pokemon) {
 }
 
 const pokemonList = (document.getElementById('pokemonList'))
-pokemonList.innerHTML += '<li>teste</li>'
-fetch(url)
-    .then((response) => response.json())
-    .then((jsonBody) => jsonBody.results)
-        .then(function (pokemons) {
-            
-            for (let i = 0; i < pokemons.length; i++) {
-                const pokemon = pokemons[i];
-                pokemonList.innerHTML += convertPokemonToLi(pokemon)
-                
 
-                
-            }
-        })
-        document.getElementsByClassName('pokemons')
-    .catch(function (error) {
-        console.error(error)
-    })
-    .finally(function () {
-        console.log('Requesição concluida')
-    })
+pokeApi.getPokemons().then((pokemons) => {
+    const listItems = []
+
+    pokemons.map()
+    for (let i = 0; i < pokemons.length; i++) {
+        const pokemon = pokemons[i];
+        listItems.push(convertPokemonToLi(pokemon))
+    }
+    console.log(listItems)
+})
+        
+        
     
 
     
