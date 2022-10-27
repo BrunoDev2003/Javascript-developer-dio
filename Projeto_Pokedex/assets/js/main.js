@@ -7,7 +7,7 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
 function convertPokemonToLi(pokemon) {
     return `
-    <li class="pokemon" ${pokemon.type}>
+    <li class="pokemon ${pokemon.type}">
                 <span class="number">${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
 
@@ -15,7 +15,7 @@ function convertPokemonToLi(pokemon) {
                     <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join('')}
                     </ol>
-                    <img src="${pokemon.sprites.other.dream_world.front_default}" 
+                    <img src="${pokemon.photo}" 
                     alt="${pokemon.name}">
                 </div>
             </li>
