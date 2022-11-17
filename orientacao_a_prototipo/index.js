@@ -11,7 +11,7 @@ const bruno = {
 }
 
 */
-
+/*
 function Pessoa(nome,idade) {
     this.nome = nome;
     this.idade = idade;
@@ -23,5 +23,25 @@ pessoa.prototype.falar = function () {
 console.log(bruno.genero)
 
 bruno.falar()
+*/
+//criação de um objeto baseado em outro, objeto literal 
 
-//06:30
+const pessoa = {
+    genero: 'masculino'
+}
+
+const bruno ={
+    name: 'bruno',
+    __proto__: pessoa
+}
+
+console.log(bruno)
+
+//segunda forma com o object.create
+
+const bruno = Object.create(pessoa)
+
+bruno.nome = "bruno"
+
+console.log(bruno.genero)
+
