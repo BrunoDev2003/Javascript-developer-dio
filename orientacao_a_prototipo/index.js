@@ -45,3 +45,12 @@ bruno.nome = "bruno"
 
 console.log(bruno.genero)
 
+//operador new  
+
+function Pessoa(nome, idade) {
+    this.nome = nome
+    this.idade = idade 
+}
+
+console.log(new Pessoa('bruno', 19))
+
