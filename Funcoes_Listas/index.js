@@ -67,3 +67,49 @@ console.log(somaParcial(50))
 //aqui em baixo chamamos a funcao soma que retorna outra funcao, armazenando o x no momento da criação da função, é uma característica
 //do closure
 console.log(soma(10)(20))
+
+
+
+//invocacao direta, call e apply
+
+const pessoa = {
+    nome: 'bruno', 
+    idade: 19
+}
+function gritar(prefixo) {
+    console.log(prefixo, this.nome)
+}
+//apply
+
+gritar.apply(pessoa, ['Olaaaa'])
+
+//call
+
+gritar.call(pessoa, 'olaaaa')
+
+//Menção honrosa aos callbacks, com um projeto de calculadora
+function soma(x,y) {
+    return x + y;
+}
+
+function subtracao(x,y) {
+    return x - y;
+}
+
+function multiplicacao(x,y) {
+    return x * y;
+}
+
+function divisao(x,y) {
+    return x / y;
+}
+
+
+function calculadora(x, operacao, y) {
+    console.log(operacao(x,y));
+}
+
+calculadora(10, soma, 20);
+calculadora(10, subtracao, 20);
+calculadora(10, multiplicacao, 20);
+calculadora(10, divisao, 20);
