@@ -34,6 +34,8 @@ const listaEmHtml = lista.map(element => {
         </li>
     `
 })
+
+
 /*const listaNomes = []
 
 for (let i = 0; 1 < lista.length; i++) {
