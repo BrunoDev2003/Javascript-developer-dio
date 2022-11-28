@@ -35,6 +35,14 @@ const listaEmHtml = lista.map(element => {
     `
 })
 
+const lista2 = [1,2,3,4,5,6,7]
+
+const somaDeTodosOsNumeros = lista2.reduce((previous, current) => {
+    console.log(previous, current)
+    return previous + current
+})
+
+console.log(somaDeTodosOsNumeros)
 
 /*const listaNomes = []
 
