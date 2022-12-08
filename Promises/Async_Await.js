@@ -10,5 +10,5 @@ async function buscarArquivo() {
     console.log(textoArquivo);
     
 }
-
+//treinar depois o async e await com uma chamada http e outros arquivos
 buscarArquivo()
