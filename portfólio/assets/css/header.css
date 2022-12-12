@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .header .picture .photo {
@@ -9,5 +9,9 @@
     height: 200px;
     display: flex;
     border-radius: 50%;
+}
+
+.header .title {
+    
 }
 
