@@ -1,6 +1,6 @@
 {
     "name": "Bruno Mendonça Gusmão",
-    "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
+    "photo": "https://avatars.githubusercontent.com/u/92750091?v=4",
     "job": "Estudante Sistemas De Informação",
     "location": "Umuarama - PR",
     "phone": "(55) 4991331773",
@@ -24,10 +24,6 @@
           "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
         },
         {
-          "name": "Mongodb",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
-        },
-        {
           "name": "Postgresql",
           "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
         }
@@ -40,12 +36,12 @@
     ],
     "portfolio": [
       {
-        "name": "Curso Ministrado na DIO",
+        "name": "Projeto Poxedéx com a API do Pokemon",
         "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/intro_dev_web/Projeto_Pokedex",
         "github": true
       },
       {
-        "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+        "name": "Criação de uma página de portfolio",
         "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/portfolio-projeto/portfólio",
         "github": true
       }
