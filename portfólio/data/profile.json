@@ -38,12 +38,12 @@
       {
         "name": "Projeto Poxedéx com a API do Pokemon",
         "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/intro_dev_web/Projeto_Pokedex",
-        "github": true
+        "git": true
       },
       {
         "name": "Criação de uma página de portfolio",
         "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/portfolio-projeto/portfólio",
-        "github": true
+        "git": true
       }
     ]
   }
