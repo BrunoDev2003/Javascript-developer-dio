@@ -1,6 +1,6 @@
 
 function updateProfileInfo(profileData) {
-    document.getElementById('profile.photo')
+    const photo = document.getElementById('profile.photo')
     photo.src = profileData.photo
     photo.alt = profileData.name
 
@@ -23,8 +23,8 @@ function updateProfileInfo(profileData) {
 }
 
 function updateHardSkills(profileData) {
-    const hard = document.getElementById('profile.skills.hardSkills')
-    softSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}">${skill}</li>`.join(''))
+    const hardSkills = document.getElementById('profile.skills.hardSkills')
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}">${skill}</li>`.join(''))
 
 }
 
