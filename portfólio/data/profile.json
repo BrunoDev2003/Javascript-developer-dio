@@ -1,0 +1,53 @@
+{
+    "name": "Bruno Mendonça Gusmão",
+    "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
+    "job": "Estudante Sistemas De Informação",
+    "location": "Umuarama - PR",
+    "phone": "(55) 4991331773",
+    "email": "brunogusmao43@gmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "Nodejs",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+        },
+        {
+          "name": "Java",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        },
+        {
+          "name": "Angular",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        },
+        {
+          "name": "React",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        },
+        {
+          "name": "Mongodb",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+        },
+        {
+          "name": "Postgresql",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        }
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Inglês (Fluente)",
+      "Espanhol (intermediário)"
+    ],
+    "portfolio": [
+      {
+        "name": "Curso Ministrado na DIO",
+        "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/intro_dev_web/Projeto_Pokedex",
+        "github": true
+      },
+      {
+        "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+        "url": "https://github.com/BrunoDev2003/Javascript-developer-dio/tree/portfolio-projeto/portfólio",
+        "github": true
+      }
+    ]
+  }
