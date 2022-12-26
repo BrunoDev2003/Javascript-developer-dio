@@ -47,7 +47,7 @@ function updatePortfolio(profileData) {
 }
 
 {async () => {
-    const profileData = await fetchProfileData
+    const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
     updateHardSkills(profileData)
     updateLanguages(profileData)
