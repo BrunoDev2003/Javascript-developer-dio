@@ -46,10 +46,10 @@ function updatePortfolio(profileData) {
     }).join('')
 }
 
-{async () => {
+(async () => {
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
     updateHardSkills(profileData)
     updateLanguages(profileData)
     updatePortfolio(profileData)
-}}
+})()
