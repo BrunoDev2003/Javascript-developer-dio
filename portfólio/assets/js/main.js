@@ -28,8 +28,28 @@ function updateHardSkills(profileData) {
 
 }
 
+function updateLanguages(profileData) {
+    const languages =  document.getElementById('profile.languages')
+    languages.innerHTML = profileData.languages.map(language => `<li>${language.name}</li>`).join('')
+}
+
+
+function updatePortfolio(profileData) {
+    const portfolio = document.getElementById('profile.portfolio')
+    portfolio.innerHTML = profileData.portfolio.map(project => {
+        return `
+            <li>
+                <span ${project.github ? 'class="github' : ""}>${project.name}</span>
+                <a href="${project.url}" target="_blank">${project.url}</a>
+            </li>
+        `
+    }).join('')
+}
 
 {async () => {
     const profileData = await fetchProfileData
     updateProfileInfo(profileData)
+    updateHardSkills(profileData)
+    updateLanguages(profileData)
+    updatePortfolio(profileData)
 }}
