@@ -1,0 +1,11 @@
+.item-list strong{
+    color: aqua;
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.item-list p{
+    color: aqua;
+    font-size: 12px;
+    margin-top: 24px;
+}

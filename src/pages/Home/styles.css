@@ -1,0 +1,26 @@
+.conteudo{
+
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.background{
+    height: 100vh;
+    position: absolute;
+}
+
+.info{
+    color: #fff;
+    margin-right: 60px;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.repositorio {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin: 12px 0;
+}
