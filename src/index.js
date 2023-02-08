@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
-import GlobalStyle from './pages/styles';
+import GlobalStyle from './styles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

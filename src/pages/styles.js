@@ -1,16 +1,14 @@
-import { createGlobalStyle } from "styled-components";
+import styled from "styled-components"; 
 
-export default createGlobalStyle`
-    *{
-        margin:0;
-        padding:0;
-    }
+export const Container = styled.div`
+    witdh: 100%;
+    height: 100vh;
 
-    body {
-        background-color: #fff;
-        color: #fff;
-    }
+    margin: 20px 0 0 0;
 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 `
-
-//04:20
