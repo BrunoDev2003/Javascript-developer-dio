@@ -1,10 +1,10 @@
 import React from 'react';
 
 import {InputContainer} from './styles';
-function Input() {
+function Input({value, onChange}) {
     return (
         <InputContainer>
-            <input></input>
+            <input value={value} onChange={onChange}></input>
         </InputContainer>
     )
 }
