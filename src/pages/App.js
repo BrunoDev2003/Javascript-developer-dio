@@ -19,8 +19,24 @@ function App() {
     const {data} = await api.get(`repos/${currentRepo}`);
 
     if(data.id){
-      setRepos(prev => [...prev,data]);
+
+      const isExist = repos.find(repo.id === data.id);
+
+      if(!isExist){
+        setRepos(prev => [...prev,data]);
+        setCurrentRepo('')
+        return
+      }
+      
     }
+    alert('Repositório não encontrado')
+
+  }
+
+  const handleRemove = (id) => {
+    console.log("removendo o repositorio com o id: ", id);
+
+    // usar o metodo TS filter.
   }
   return (
     <div className="App">
@@ -28,7 +44,7 @@ function App() {
       <img src={gitLogo} width={72} height={72} />
       <Input value={currentRepo} onChange={(e) => changeCurrentRepo(e.target.value)}></Input> 
       <Button onClick={searchRepo}></Button>
-      {respos.map(repo => <Item/>)}
+      {respos.map(repo => <Item handleRemove={handleRemove}/>)}
       <Item></Item>
       </Container>
     </div>
