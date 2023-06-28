@@ -24,7 +24,7 @@ function App() {
 
       if(!isExist){
         setRepos(prev => [...prev,data]);
-        setCurrentRepo('')
+        currentRepo('')
         return
       }
       
@@ -33,18 +33,19 @@ function App() {
 
   }
 
-  const handleRemove = (id) => {
-    console.log("removendo o repositorio com o id: ", id);
+  const handleRemoveRepo = (id) => {
+    console.log("Removendo registro", id);
 
-    // usar o metodo TS filter.
+    // ulltizar metodo TS filter
   }
+
   return (
     <div className="App">
       <Container>
       <img src={gitLogo} width={72} height={72} />
       <Input value={currentRepo} onChange={(e) => changeCurrentRepo(e.target.value)}></Input> 
       <Button onClick={searchRepo}></Button>
-      {respos.map(repo => <Item handleRemove={handleRemove}/>)}
+      {respos.map(repo => <Item handleRemove={handleRemoveRepo}/>)}
       <Item></Item>
       </Container>
     </div>
