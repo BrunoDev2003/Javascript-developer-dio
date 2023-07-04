@@ -1,6 +1,6 @@
 import styled from 'styled-components'; 
 
-export const Item = styled.div`
+export const itemContainer = styled.div`
     width: 80%;
 
     h3 {
